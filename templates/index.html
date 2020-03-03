@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request counter with Flask</title>
+</head>
+<body>
+
+    <a href="{{url_for('route_request_counter')}}">GET-Request</a>
+    <br>
+    <form method="post" action="{{url_for('route_request_counter')}}">
+        <input type="submit" value="POST-Request">
+    </form>
+    <br>
+    <a href="/statistics">Statistics</a>
+</body>
+</html>
